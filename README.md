@@ -1,5 +1,8 @@
 # airline-tickets-reservations
-Airline online tickets reservations database scheme for commercial flights
+Airline online tickets reservations database scheme for commercial flights built using Oracle tools.
+
+## Preview
+![alt text](https://github.com/ljmocic/airline-tickets-reservations/blob/master/airline-tickets-reservations.png)
 
 ## Installation
 * Install Oracle 11g Database: [database](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html)
