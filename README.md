@@ -2,7 +2,7 @@
 Airline online tickets reservations database scheme for commercial flights
 
 ## Installation
-* Install Oracle 11g database: [database](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html)
+* Install Oracle 11g Database: [database](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html)
 * Install Oracle SQL Developer: [sql developer](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html)
 * Install Oracle Data Modeler: [data modeler](http://www.oracle.com/technetwork/developer-tools/datamodeler/overview/index.html)
 * Start server: [help](https://stackoverflow.com/questions/13892261/get-started-link-does-not-work-in-oracle-11g-server)
