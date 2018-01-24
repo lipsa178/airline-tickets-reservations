@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E661E39F-EBA9-7CF6-6E59-89B687D8C189" name="Class">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>2D3A1175-963E-574A-879E-98C7D70A9041</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="class_id" id="C527EF07-1608-C4B4-A517-42730B4D6F71">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>B67F6A2E-03C9-E037-1D86-66A85C14A075</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Airplane_airplane_id" id="9BFFA104-4393-EB24-C401-A42E94D58CE5">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>AF307398-9D6F-DC23-9FEF-EBE4E77373F9</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DB81043-4A33-E5B4-CDE4-2896CB6AB0CB" referredColumn="1661E6D8-CE0B-6995-FF2E-C715A2859A89"/>
+</associations>
+</Column>
+<Column name="class_name" id="B5F8D548-9DEE-FCC9-6521-49058375133F">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>400C9681-FB74-C62A-F6E4-84495AAFE88D</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seat_count" id="2D426E08-503B-02BC-C271-36631030756B">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>F41982BC-910B-377E-6182-0B19ABBAC85E</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EC86BBD-45D0-C260-018D-F41328D9876F" name="Class_PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>8BD2D8FA-76FA-66B0-0528-2531DB4029D8</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C527EF07-1608-C4B4-A517-42730B4D6F71"/>
+<colUsage columnID="9BFFA104-4393-EB24-C401-A42E94D58CE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9B84670-9300-D6BC-CA8E-B867E8B1D698" name="Class_Airplane_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>FB66C89D-E02B-ECC7-49D8-6767FA396AF6</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BFFA104-4393-EB24-C401-A42E94D58CE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

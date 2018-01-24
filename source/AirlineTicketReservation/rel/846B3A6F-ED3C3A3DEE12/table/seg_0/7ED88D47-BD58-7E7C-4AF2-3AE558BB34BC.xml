@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7ED88D47-BD58-7E7C-4AF2-3AE558BB34BC" name="LCD">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>509C2C7B-6283-0B9F-9937-98F2E374938A</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<abbreviation>LCD</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LCD_id" id="9CBBB56C-0DFE-A0A7-FDBD-C75C886AFF0A">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>29B08E41-3D4B-ADF1-151B-799AA73318D7</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tier" id="47421B58-550B-BF45-E8CF-0A004AADD70C">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<comment>0 - Gold&lt;br/&gt;1 - Silver&lt;br/&gt;2 - Bronze&lt;br/&gt;3 - is not valid</comment>
+<generatorID>F368E4D8-E30C-952D-4988-9239893AB6C3</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="discount" id="0B6727C8-EEE1-6E3B-453F-EEF5F58676E6">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>8BF3F525-9D25-2F2C-6E93-784C345C4971</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACNT_ACNT_id" id="88F14A39-B0DF-9BE8-E3ED-6038EEB40085">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>007C836C-A523-E4A7-EB55-0152FF2CFDA5</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="134DFDA3-18DF-213B-700E-E7F9E6330348" referredColumn="01C72F4E-82B7-C481-6EC4-DE1EAE213E07"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F6D4B16E-D608-11C7-53FD-8E115E87CF88" name="LCD_PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>4291E916-A240-AE4D-CE24-B3A45EB0C7EF</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CBBB56C-0DFE-A0A7-FDBD-C75C886AFF0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5F7D490-6E4E-5CDF-C669-1CFAB9BDC08D" name="LCD__IDX">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C34C83DC-84E8-118E-DCC5-8816C1B2DEBB</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="88F14A39-B0DF-9BE8-E3ED-6038EEB40085"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F53762EC-872B-A3D7-A617-3BFEC9BC4F0B" name="LCD_ACNT_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>C34C83DC-84E8-118E-DCC5-8816C1B2DEBB</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88F14A39-B0DF-9BE8-E3ED-6038EEB40085"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

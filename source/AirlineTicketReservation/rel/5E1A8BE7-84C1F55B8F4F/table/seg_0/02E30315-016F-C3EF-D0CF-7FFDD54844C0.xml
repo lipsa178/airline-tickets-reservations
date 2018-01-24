@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02E30315-016F-C3EF-D0CF-7FFDD54844C0" name="RTE">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 23:30:07 UTC</createdTime>
+<generatorID>4B8C0A96-70B3-9341-C01E-88585DA7C444</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<abbreviation>RTE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RTE_id" id="B08DC752-2AA0-BAF7-9357-DEDC2CD08688">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 23:30:07 UTC</createdTime>
+<generatorID>CADEA39C-7519-6280-0776-5FD3425D540F</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPT_IATA" id="87EDCB98-30F0-2239-4039-56E995FCAFF0">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 23:30:07 UTC</createdTime>
+<generatorID>9283C13B-3FEF-F015-E678-968034911D94</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81527985-D21C-9F42-66A8-EC6BC570F639" referredColumn="BB64F3BA-74EF-BA9E-79B2-118D3DA279A9"/>
+</associations>
+</Column>
+<Column name="DEST_IATA" id="66633932-0C34-33DD-65C8-691EB27CE278">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 23:30:07 UTC</createdTime>
+<generatorID>2D359F0A-1E53-5FB5-2B92-645B7868FF7D</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A5DE7A4-A0BE-BB6C-9105-E1D7AA2ED3EB" referredColumn="BB64F3BA-74EF-BA9E-79B2-118D3DA279A9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2A7C82A-9C57-00C4-AF0A-15E2841DFEC8" name="RTE_PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 23:30:07 UTC</createdTime>
+<generatorID>23F94B6B-FF20-A5C4-AAB7-22465736CA13</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B08DC752-2AA0-BAF7-9357-DEDC2CD08688"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFCB8F3E-8DE4-49C8-307F-98913CC2CC59" name="RTE_APT_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 23:30:07 UTC</createdTime>
+<generatorID>21F226D3-8857-78FC-FCD2-33D0DDF2ED8F</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66633932-0C34-33DD-65C8-691EB27CE278"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2BB2BA3-7173-736A-208A-04DD96CF70E1" name="RTE_APT_FKv2">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 23:30:07 UTC</createdTime>
+<generatorID>C6716073-E053-558A-306D-08BB4215ACDE</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87EDCB98-30F0-2239-4039-56E995FCAFF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

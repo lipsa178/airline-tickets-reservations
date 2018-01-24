@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD3F61DC-1986-7270-D776-7A55B39A9B80" name="Transaction">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>CFE16EEA-E77A-4557-CF7B-63C704A2862C</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="transaction_id" id="E99BE9D2-E615-24F5-D923-DE0FBE777DDF">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>4EFB296D-4FA9-0A6E-E676-50D5A8F1D440</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Invoice_invoice_id" id="B341AE64-253D-24CE-C607-B7DF2BEA29F9">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>A6060687-1582-DE1A-FC20-3D6AE2018349</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="330FA8D1-05E4-F549-0F2A-6FA9EF5D0F0F" referredColumn="4D2CD975-3F7C-C3EF-3006-82FAF72924A4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B175280B-3168-E0B5-A7D5-988C654F0DCB" name="Transaction_PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>B1767255-B06A-6BEF-63CF-661F41344FFD</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E99BE9D2-E615-24F5-D923-DE0FBE777DDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="942B0908-3D40-2460-11BD-C7638DF4D20D" name="Transaction__IDX">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D0676049-D446-5748-AD0F-3024F2140D40</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B341AE64-253D-24CE-C607-B7DF2BEA29F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D438D1EA-6FDC-D503-544F-A829A7468030" name="Transaction_Invoice_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>D0676049-D446-5748-AD0F-3024F2140D40</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B341AE64-253D-24CE-C607-B7DF2BEA29F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

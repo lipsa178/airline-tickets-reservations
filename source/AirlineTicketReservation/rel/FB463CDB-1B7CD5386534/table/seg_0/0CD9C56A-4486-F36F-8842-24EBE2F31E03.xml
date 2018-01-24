@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0CD9C56A-4486-F36F-8842-24EBE2F31E03" name="WRN">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 18:07:07 UTC</createdTime>
+<generatorID>94B7468E-864E-AA84-31BA-4658BD0B89D1</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<abbreviation>WRN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="APT_APT_IATA" id="661172D5-F2C6-FE68-BF94-F9587B3BA5AC">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 18:07:07 UTC</createdTime>
+<generatorID>BD96FA21-985A-C43C-3703-ECFB5837F14B</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E581182-0FF6-B058-DB5D-6ECE3D5968CA" referredColumn="70BD0FD1-0FFA-04D2-3F82-250B3D3D0E28"/>
+</associations>
+</Column>
+<Column name="ALN_ALN_IATA" id="280A72C7-4B5E-B662-6DD3-1D1E35CD88B9">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 18:07:07 UTC</createdTime>
+<generatorID>E7F8646C-BD5E-456E-C8E8-7FE7DFC69079</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88C0D432-8596-C9E1-4253-FFAFF8DF67F1" referredColumn="193456E5-B99A-8428-FD10-ECF9A26B2F45"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="647C2EE4-67C9-A054-EB8F-4594E18E12A0" name="WRN_PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 18:07:07 UTC</createdTime>
+<generatorID>2F03725C-0AF5-88A9-BD7D-81DEDEA58129</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="661172D5-F2C6-FE68-BF94-F9587B3BA5AC"/>
+<colUsage columnID="280A72C7-4B5E-B662-6DD3-1D1E35CD88B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D59E5AE1-B909-718F-8B10-9F31C103641E" name="WRN_APT_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 18:07:07 UTC</createdTime>
+<generatorID>0547E261-134A-3485-E1E9-651700300225</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="661172D5-F2C6-FE68-BF94-F9587B3BA5AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85325573-0AA9-18C9-5E50-8F421980BA03" name="WRN_ALN_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 18:07:07 UTC</createdTime>
+<generatorID>3D276CF4-CA60-F879-AA76-B3BDBB9E8D0F</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="280A72C7-4B5E-B662-6DD3-1D1E35CD88B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

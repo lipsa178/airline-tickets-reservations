@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4680FBE2-432E-9571-EA4C-1C7C7D2F7CD3" containerWithKeyObject="362CF03B-D812-B75A-5CBC-E8CE02C988BD" localFKIndex="627C6071-C813-1F6E-7584-AB82387250DB" name="SEAT_CLS_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 18:07:07 UTC</createdTime>
+<generatorID>1C9D0090-0ECA-3186-08BA-DC0A90FD90B7</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<referredTableLongName>CLS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1EAB2F8D-93A8-AA42-3F9A-40379D353589</referredTableID>
+<keyObject>413C5DBA-9DA5-202E-49DF-5CCD7EF26FE6</keyObject>
+<referredKeyID>413C5DBA-9DA5-202E-49DF-5CCD7EF26FE6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CLS_id,APN_APN_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

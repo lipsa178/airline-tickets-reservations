@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="681857EE-5535-7B01-B728-C6E752242FF6" name="ALW">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>1CEC7258-9647-8735-C7C1-A859A5407540</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<abbreviation>ALW</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="APT_APT_IATA" id="607C324D-29CC-8A55-E5C3-2C4BAC61268B">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>00EC9823-6BFF-D8D2-CEB6-7DFB3B31F973</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="342E457A-8EEB-757E-84AC-AA86F3D4BBA5" referredColumn="0BE5EBAD-1DA5-9275-F7BB-3A32F1133E4B"/>
+</associations>
+</Column>
+<Column name="RTE_RTE_id" id="D509D6B5-7A97-87BE-6905-DFF1F242820D">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>573BF627-A857-3A07-061E-0EA495E8EF97</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A20361C1-9146-D06E-AB5D-03C8219DB1A1" referredColumn="FA24B3AD-2ABC-2392-9864-2045AC10345D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D51FCC12-3254-9BFB-0E77-5588A36DB671" name="ALW_PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>A27E3012-1CDA-CEED-68A0-38062E995BA1</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D509D6B5-7A97-87BE-6905-DFF1F242820D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E346FD6-A081-42CB-201E-E1E25A1D888F" name="ALW_APT_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>66A7FC5C-BD8A-F904-F606-6ADB421B8863</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="607C324D-29CC-8A55-E5C3-2C4BAC61268B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90B5E6A3-8E6E-6BC0-7C10-7369B7D2BD31" name="ALW_RTE_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:33:42 UTC</createdTime>
+<generatorID>BB45D3C8-A38A-2313-2DCB-02AC6BB12E47</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D509D6B5-7A97-87BE-6905-DFF1F242820D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

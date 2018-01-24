@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E2E535B0-331F-757B-8009-4ACB2D08CBC0" name="Location">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:22:28 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>LCN</preferredAbbreviation>
+<shortName>LCN</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="location_id" id="991CFF16-1F9A-C19A-DD42-5B1EE2596EAF">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:22:28 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<importedID>65081B4C-9839-206A-1673-8000A88FD133</importedID>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>LCN_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="country" id="9C2A9120-922C-6A09-88FB-333FFECA403C">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:22:28 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<importedID>38D7C9DA-814F-ADBE-3FAE-9B776B421740</importedID>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city" id="60DAB7E8-901F-EAD8-CC3B-B5AE1EB103E6">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:22:28 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<importedID>756C6ADB-8B06-27AD-D651-7CD7EA87AF08</importedID>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street" id="6E643A9C-F559-A9B2-2816-7B7D9D8A5977">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:22:28 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<importedID>E6B113DB-3A74-5ED6-0939-57F8B9F982CD</importedID>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="number" id="A19C050E-EED5-0BF2-EA84-AD5AA76F02D1">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:22:28 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<importedID>CE7A93CB-5914-04DE-7085-31008B07414A</importedID>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="longitude" id="9A47F51E-13B1-5AC8-FFF9-B013CACF5532">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:22:28 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<importedID>72FEC6DC-9928-39EC-46A3-FA5BB074063C</importedID>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
+</Attribute>
+<Attribute name="latitude" id="6836B019-B860-662E-94B8-1479D993D1B2">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:22:28 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<importedID>3EE91AF9-AFB8-6813-5BAC-1713C84B30EA</importedID>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
+</Attribute>
+<Attribute name="time_zone" id="D1E002D3-1B8C-E7AD-ED08-E090E1A23FAE">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:22:28 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<importedID>6A1AA759-E5B7-42B0-10CE-C54D6998F1BB</importedID>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70CBD8C4-3946-A39E-8EB2-5458FA4EB8F0" name="Location PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:22:28 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>991CFF16-1F9A-C19A-DD42-5B1EE2596EAF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

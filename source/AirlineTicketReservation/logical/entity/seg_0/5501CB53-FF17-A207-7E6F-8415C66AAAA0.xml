@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5501CB53-FF17-A207-7E6F-8415C66AAAA0" name="Invoice">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 14:56:33 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>INV</preferredAbbreviation>
+<shortName>INV</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="invoice_id" id="CE2D2A00-98F0-1A58-4F63-493CAFC11A3F">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:03:38 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>INV_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="total_cost" id="5DE8A722-F581-1E2A-8131-B5AA885C29C3">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:27:16 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5B700CB1-47A6-64D0-C264-85CB1134C623" name="Invoice PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 14:59:04 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CE2D2A00-98F0-1A58-4F63-493CAFC11A3F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="3052FBD7-84B5-C9C5-EA28-EDA8548CB368" mainViewID="28B88EBF-507C-DA91-CD0C-F85FCA8586DD">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 13:59:46 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

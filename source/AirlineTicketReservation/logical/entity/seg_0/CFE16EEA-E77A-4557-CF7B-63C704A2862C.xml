@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CFE16EEA-E77A-4557-CF7B-63C704A2862C" name="Transaction">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 14:55:34 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>TRS</preferredAbbreviation>
+<shortName>TRS</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="transaction_id" id="4EFB296D-4FA9-0A6E-E676-50D5A8F1D440">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 14:55:40 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TRS_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="invoice_id" id="A6060687-1582-DE1A-FC20-3D6AE2018349">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:06:04 UTC</createdTime>
+<generatorID>D0676049-D446-5748-AD0F-3024F2140D40</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<referedAttribute>CE2D2A00-98F0-1A58-4F63-493CAFC11A3F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B1767255-B06A-6BEF-63CF-661F41344FFD" name="Transaction PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 14:59:08 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="A36E2470-5EBC-3FBB-E109-73C0E0AA763A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4EFB296D-4FA9-0A6E-E676-50D5A8F1D440</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

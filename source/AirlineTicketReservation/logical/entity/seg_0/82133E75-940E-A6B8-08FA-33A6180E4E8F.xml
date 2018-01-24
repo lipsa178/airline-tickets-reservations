@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82133E75-940E-A6B8-08FA-33A6180E4E8F" name="Req_reservation">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 15:19:27 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>REQ_RES</preferredAbbreviation>
+<shortName>REQ_RES</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="request_id" id="092A3D2B-0B85-E86C-1B37-C19C3D649194">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:00:00 UTC</createdTime>
+<generatorID>BF810533-ABB0-0FD0-F657-4FA045C8C8CE</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<referedAttribute>2243912E-D5FD-392C-6AD6-6116D71202DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>REQ_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="reservation_id" id="B5B5117C-C0FF-9B14-D424-3CA4EDE9AB2B">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:00:13 UTC</createdTime>
+<generatorID>973A032B-BCE5-24F3-C642-CF77E19803C9</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<referedAttribute>DD1109D0-7215-29A4-260F-27410E562279</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="invoice_id" id="17F354A9-5760-57C7-5B9E-E4B051E0CBF8">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:03:43 UTC</createdTime>
+<generatorID>AEF93E9B-B89D-0CE9-087C-FAE98D1D509D</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<referedAttribute>CE2D2A00-98F0-1A58-4F63-493CAFC11A3F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="account_id" id="2BC41EDC-AD03-D3E1-BA1D-81873D84DB96">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 18:09:11 UTC</createdTime>
+<generatorID>BF810533-ABB0-0FD0-F657-4FA045C8C8CE</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<referedAttribute>FDD16C76-9784-90F3-E634-0476AB34D7B0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type" id="E4FC2B8F-C19F-C64A-F72B-FC3F2254F829">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:12:44 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<listOfValues>
+<valueDef value="0" description="Adult"/>
+<valueDef value="1" description="Children"/>
+<valueDef value="2" description="Baby"/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="31007549-EBC0-07DA-B3ED-5AB8C5B91D85" name="Requested_seat_reservation PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:00:41 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B5B5117C-C0FF-9B14-D424-3CA4EDE9AB2B</attributeRef>
+<attributeRef>092A3D2B-0B85-E86C-1B37-C19C3D649194</attributeRef>
+<attributeRef>2BC41EDC-AD03-D3E1-BA1D-81873D84DB96</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

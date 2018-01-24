@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BC3AD994-0D08-0F29-1A8D-C522CAA011A9" name="Code">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:43:38 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="promo_code_id" id="5F09E8E8-8000-521A-1FE6-291141B01899">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:43:56 UTC</createdTime>
+<generatorID>B5850C5E-EF30-01BC-EF5C-2D5E1C5228B7</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<referedAttribute>BAA5E4B1-FAC6-E8BC-EC01-192416A2D2C6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="validity" id="DB0D03AE-9FDD-FC45-ACE1-BD07750E04DB">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:44:08 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="account_id" id="39821230-40F5-6F2F-9AF9-B830913C6566">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:45:20 UTC</createdTime>
+<generatorID>0CE19AB2-D25F-644C-7252-430E5D2BE1AD</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<referedAttribute>CC334610-E365-89DB-42D5-6AB297740657</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reservation_id" id="C24B6EAF-E847-E0E7-8D2B-6C352F8D1D69">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:47:44 UTC</createdTime>
+<generatorID>6DF95B03-4C76-F9AA-79CB-CEA06B2E5489</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DD1109D0-7215-29A4-260F-27410E562279</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="discount" id="E6A83760-3735-1277-65FF-26F7E0922B0E">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:47:55 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C51BCD2A-B305-D87A-5AFF-51C1C817F5EF" name="Code PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:43:56 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5F09E8E8-8000-521A-1FE6-291141B01899</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

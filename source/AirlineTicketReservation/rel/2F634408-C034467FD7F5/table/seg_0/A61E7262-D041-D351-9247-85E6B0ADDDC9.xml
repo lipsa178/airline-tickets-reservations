@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A61E7262-D041-D351-9247-85E6B0ADDDC9" name="Relation_49">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Account_account_id" id="E41034E5-62D9-5143-23A6-92200100C994">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="653DFE51-C950-D1D0-F2B0-D8DCCE034B6B" referredColumn="95B14867-AC55-0B2F-C0BF-DEF1CC135084"/>
+</associations>
+</Column>
+<Column name="Promo_code_promo_code_id" id="17CAF606-9BB8-099C-9E1B-E368D823D54D">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42723D7C-9C9F-194B-8232-A2BDC6AE8461" referredColumn="DCC29B3B-53A4-C36A-3B34-A09CB7E35610"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E4F36D8E-4683-56E5-A47A-E617257B2BE9" name="Relation_49_PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E41034E5-62D9-5143-23A6-92200100C994"/>
+<colUsage columnID="17CAF606-9BB8-099C-9E1B-E368D823D54D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D9775E9-8AC4-A4D5-C58C-D871B37CB38D" name="Relation_49_Account_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>9298B7E3-0121-9108-5F56-764EAD9F5AD6</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E41034E5-62D9-5143-23A6-92200100C994"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8F92203-B93E-2826-FD8A-B739FF3012AE" name="Relation_49_Promo_code_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>9298B7E3-0121-9108-5F56-764EAD9F5AD6</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17CAF606-9BB8-099C-9E1B-E368D823D54D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

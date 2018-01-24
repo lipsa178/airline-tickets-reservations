@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_59" directorySegmentName="seg_0" id="6EA3DC3A-E383-EC45-0DD5-43E4E343445E">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:56:11 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<sourcePk>C8427272-3652-57D7-F7A8-352B12173073</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1D1A14FD-AD99-FD6D-FA8F-8E5E2E9AC697</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>20D1E6DA-9376-4A99-F536-3FCE863417A2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="gate_id" id="B254A9BF-5874-6F9D-C73C-8E2977449AC4">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:56:15 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C741FF63-165B-D742-130A-6DED1BC0EA89" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

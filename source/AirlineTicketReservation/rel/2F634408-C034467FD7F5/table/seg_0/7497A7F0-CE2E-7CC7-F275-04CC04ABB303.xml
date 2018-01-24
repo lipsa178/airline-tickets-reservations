@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7497A7F0-CE2E-7CC7-F275-04CC04ABB303" name="Route">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>4B8C0A96-70B3-9341-C01E-88585DA7C444</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="route_id" id="E5E29C36-99A7-A924-D290-8562694E277D">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>CADEA39C-7519-6280-0776-5FD3425D540F</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Airport_APT_IATA1" id="D643ED8E-F32D-F9E9-30F5-A09BE0A176FE">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>9283C13B-3FEF-F015-E678-968034911D94</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05B02AF6-027E-7795-D979-9F4D040F401A" referredColumn="FD7D5977-587D-377D-9691-AA0F0C9B6736"/>
+</associations>
+</Column>
+<Column name="Airport_APT_IATA" id="AA39FF6A-7AAE-2567-225D-36228426CB8E">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>2D359F0A-1E53-5FB5-2B92-645B7868FF7D</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6E46787-99A4-4467-AD96-378B1FC309F3" referredColumn="FD7D5977-587D-377D-9691-AA0F0C9B6736"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6CB312A9-ACBA-F70A-0057-1218D439D8FB" name="Route_PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>23F94B6B-FF20-A5C4-AAB7-22465736CA13</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5E29C36-99A7-A924-D290-8562694E277D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45EBD72E-50F4-A1F7-27AC-2E80F8DAD911" name="Route_Airport_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>21F226D3-8857-78FC-FCD2-33D0DDF2ED8F</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA39FF6A-7AAE-2567-225D-36228426CB8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26176D01-EF8E-28C9-F0A4-430DF37FE4C2" name="Route_Airport_FKv2">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>C6716073-E053-558A-306D-08BB4215ACDE</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D643ED8E-F32D-F9E9-30F5-A09BE0A176FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

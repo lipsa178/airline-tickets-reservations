@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4FCFF8F5-BB7C-F31F-F73D-45AD4CF6AB23" name="Loyality_card">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>509C2C7B-6283-0B9F-9937-98F2E374938A</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="loyality_card_id" id="5B5B3ED9-436F-2AC7-7B65-F4278A76A7E6">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>29B08E41-3D4B-ADF1-151B-799AA73318D7</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tier" id="93E6F58A-F5B4-D741-2766-456CF4D55229">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<comment>0 - Gold&lt;br/&gt;1 - Silver&lt;br/&gt;2 - Bronze&lt;br/&gt;3 - is not valid</comment>
+<generatorID>F368E4D8-E30C-952D-4988-9239893AB6C3</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="discount" id="3C4A07AD-4DD9-603C-EF97-04D730B1205B">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>8BF3F525-9D25-2F2C-6E93-784C345C4971</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_account_id" id="708E0D51-2048-38D5-321C-718FDBEF2D4A">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>007C836C-A523-E4A7-EB55-0152FF2CFDA5</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4BD93A0A-0D94-2378-E865-65B960414932" referredColumn="95B14867-AC55-0B2F-C0BF-DEF1CC135084"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C565F02F-AF1D-F7FC-DB07-C47809A53326" name="Loyality_card_PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>4291E916-A240-AE4D-CE24-B3A45EB0C7EF</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B5B3ED9-436F-2AC7-7B65-F4278A76A7E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE07D5BA-A49E-B614-DE17-646B06C20049" name="Loyality_card__IDX">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C34C83DC-84E8-118E-DCC5-8816C1B2DEBB</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="708E0D51-2048-38D5-321C-718FDBEF2D4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2FF4C7F-2FD0-68FF-F18C-EA99C9E9077B" name="Loyality_card_Account_FK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 19:29:59 UTC</createdTime>
+<generatorID>C34C83DC-84E8-118E-DCC5-8816C1B2DEBB</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="708E0D51-2048-38D5-321C-718FDBEF2D4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

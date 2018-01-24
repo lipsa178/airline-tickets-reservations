@@ -1,0 +1,332 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="02F9A41C-D597-9938-36B5-576FD214CB8E" name="BOUGHT_TICKETS">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 19:46:56 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<ordsAlias>view_3</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL>SELECT&lt;br/&gt;    acnt.first_name AS name,&lt;br/&gt;    acnt.last_name AS last_name,&lt;br/&gt;    crc.credit_card_number AS cc,&lt;br/&gt;    res.cost AS cost,&lt;br/&gt;    pss.apt_iata AS airport,&lt;br/&gt;    ins.ready AS status,&lt;br/&gt;    flg.repeat_type AS repeat,&lt;br/&gt;    flg.distance,&lt;br/&gt;    flg.duration&lt;br/&gt;FROM&lt;br/&gt;    acnt&lt;br/&gt;    INNER JOIN req ON acnt.acnt_id = req.acnt_acnt_id&lt;br/&gt;    INNER JOIN req_res ON req.req_id = req_res.req_id&lt;br/&gt;                          AND req.acnt_acnt_id = req_res.req_acnt_acnt_id&lt;br/&gt;    INNER JOIN res ON res.res_id = req_res.res_res_id&lt;br/&gt;    INNER JOIN inv ON inv.inv_id = req_res.inv_inv_id&lt;br/&gt;    INNER JOIN trs ON inv.inv_id = trs.inv_inv_id&lt;br/&gt;    INNER JOIN tct ON res.res_id = tct.res_res_id&lt;br/&gt;                      AND trs.trs_id = tct.trs_trs_id&lt;br/&gt;    INNER JOIN pss ON pss.pss_id = tct.pss_pss_id&lt;br/&gt;    INNER JOIN crc ON acnt.acnt_id = crc.acnt_acnt_id&lt;br/&gt;    INNER JOIN ses ON ses.ses_id = res.ses_ses_id&lt;br/&gt;    INNER JOIN ins ON ses.ses_id = ins.ses_ses_id&lt;br/&gt;    INNER JOIN flg ON flg.alw_rte_rte_id = ins.flg_route_id&lt;br/&gt;                      AND flg.wrn_apt_apt_iata = ins.flg_airport_iata&lt;br/&gt;                      AND flg.wrn_aln_aln_iata = ins.flg_airline_iata&lt;br/&gt;    INNER JOIN alw ON alw.rte_rte_id = flg.alw_rte_rte_id&lt;br/&gt;    INNER JOIN rte ON rte.rte_id = alw.rte_rte_id</userDefinedSQL>
+<parsed>true</parsed>
+<usedContainers>
+<container containerID="C24FB1F7-6273-EF41-67B0-01A09ED9E712"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="name" id="497C3904-6747-3E6F-5C17-BFAB4B01FC1D">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 19:54:00 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>name</alias>
+<dataType>VARCHAR2 (50)</dataType>
+<reference>false</reference>
+<referencedColumn>51C1C611-73BF-FC03-2C41-11A3A0C50441</referencedColumn>
+<table>B04F0C7D-4989-3ACF-028B-D94F8D28809F</table>
+<viewID>02F9A41C-D597-9938-36B5-576FD214CB8E</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="last_name" id="2A02D5EA-CB66-0D37-7F9E-9680B921C4FE">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 19:54:00 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>last_name</alias>
+<dataType>VARCHAR2 (50)</dataType>
+<reference>false</reference>
+<referencedColumn>B19334D1-CF1F-CAA1-C8EB-25E225225078</referencedColumn>
+<table>B04F0C7D-4989-3ACF-028B-D94F8D28809F</table>
+<viewID>02F9A41C-D597-9938-36B5-576FD214CB8E</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cc" id="8373BE37-750A-7772-0C0E-ABA7CF59C38D">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 19:54:00 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>cc</alias>
+<dataType>CHAR (16)</dataType>
+<reference>false</reference>
+<referencedColumn>5461B3DD-E3CC-F3B1-B07A-709179469416</referencedColumn>
+<table>B778B421-DA63-1A41-E570-B3D4BFB45ACE</table>
+<viewID>02F9A41C-D597-9938-36B5-576FD214CB8E</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cost" id="7931F626-275C-2D97-AB15-68C8CDFE9EF5">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 19:54:00 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>cost</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>7FF8D99C-5BBF-A066-640B-CB23769CA114</referencedColumn>
+<table>0EAFA29D-3BF6-D0E7-4E40-131F70C17C0C</table>
+<viewID>02F9A41C-D597-9938-36B5-576FD214CB8E</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="airport" id="6A78BFE8-5B6E-C9D8-4A7A-1371C40C2779">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 19:54:00 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>airport</alias>
+<dataType>CHAR (3)</dataType>
+<reference>false</reference>
+<referencedColumn>2B6AC528-C5A1-B65A-D612-1E7F2FFE2374</referencedColumn>
+<table>E0C43906-FD26-999A-919D-73E0F05AA371</table>
+<viewID>02F9A41C-D597-9938-36B5-576FD214CB8E</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="status" id="0AB7B07D-2A2C-24C5-F661-3BB77A54F31F">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 19:54:00 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>status</alias>
+<dataType>CHAR (1)</dataType>
+<reference>false</reference>
+<referencedColumn>08E1C974-D10B-A4DD-176F-2DF588A4A5C4</referencedColumn>
+<table>D4385008-A8AF-72B9-D912-DF4B06C571BB</table>
+<viewID>02F9A41C-D597-9938-36B5-576FD214CB8E</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="repeat" id="58F8DD9F-43C3-88B8-6BFC-F4863D87BC11">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 19:54:00 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>repeat</alias>
+<dataType>CHAR (5)</dataType>
+<reference>false</reference>
+<referencedColumn>9B624232-E77F-9FF8-43CF-21D527E98944</referencedColumn>
+<table>C24FB1F7-6273-EF41-67B0-01A09ED9E712</table>
+<viewID>02F9A41C-D597-9938-36B5-576FD214CB8E</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="distance" id="BA36ED22-3D30-247B-E22D-5D9C2BFB025B">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 19:54:00 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>54F64C98-4FC9-C644-CAC4-E0A0A2735458</referencedColumn>
+<table>C24FB1F7-6273-EF41-67B0-01A09ED9E712</table>
+<viewID>02F9A41C-D597-9938-36B5-576FD214CB8E</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="duration" id="C16F1FB5-ADB5-BEBA-10CC-372D347EA1E8">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 19:54:00 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>960AD42E-6FD7-1309-49EC-A70C731B8892</referencedColumn>
+<table>C24FB1F7-6273-EF41-67B0-01A09ED9E712</table>
+<viewID>02F9A41C-D597-9938-36B5-576FD214CB8E</viewID>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B04F0C7D-4989-3ACF-028B-D94F8D28809F">
+<container>true</container>
+<tableName>ACNT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B778B421-DA63-1A41-E570-B3D4BFB45ACE">
+<container>true</container>
+<tableName>CRC</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0EAFA29D-3BF6-D0E7-4E40-131F70C17C0C">
+<container>true</container>
+<tableName>RES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E0C43906-FD26-999A-919D-73E0F05AA371">
+<container>true</container>
+<tableName>PSS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D4385008-A8AF-72B9-D912-DF4B06C571BB">
+<container>true</container>
+<tableName>INS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C24FB1F7-6273-EF41-67B0-01A09ED9E712">
+<container>true</container>
+<tableName>FLG</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="893C0765-D296-E1FB-17A7-F243EC69B060">
+<container>true</container>
+<tableName>REQ</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="36B48703-AF46-B06E-5ECC-B0D14007962F">
+<container>true</container>
+<tableName>REQ_RES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="63D655A7-6E1B-CDFE-213E-A924E8741BA0">
+<container>true</container>
+<tableName>INV</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2179013D-34B1-A22C-9A2A-D415EA984379">
+<container>true</container>
+<tableName>TRS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="984F8109-F84B-9DC8-FFA2-B0C043AE4C33">
+<container>true</container>
+<tableName>TCT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9274F56B-AFD7-A453-06C4-BE815646361B">
+<container>true</container>
+<tableName>SES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="086B7C1F-2EB1-FAD6-9E71-6451E0C7166C">
+<container>true</container>
+<tableName>ALW</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DF6F6129-3B59-8B39-E36E-9A4951D53BC6">
+<container>true</container>
+<tableName>RTE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="51C1C611-73BF-FC03-2C41-11A3A0C50441">
+<columnName>first_name</columnName>
+<tableName>ACNT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B19334D1-CF1F-CAA1-C8EB-25E225225078">
+<columnName>last_name</columnName>
+<tableName>ACNT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5461B3DD-E3CC-F3B1-B07A-709179469416">
+<columnName>credit_card_number</columnName>
+<tableName>CRC</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7FF8D99C-5BBF-A066-640B-CB23769CA114">
+<columnName>cost</columnName>
+<tableName>RES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2B6AC528-C5A1-B65A-D612-1E7F2FFE2374">
+<columnName>APT_IATA</columnName>
+<tableName>PSS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="08E1C974-D10B-A4DD-176F-2DF588A4A5C4">
+<columnName>ready</columnName>
+<tableName>INS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9B624232-E77F-9FF8-43CF-21D527E98944">
+<columnName>repeat_type</columnName>
+<tableName>FLG</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="54F64C98-4FC9-C644-CAC4-E0A0A2735458">
+<columnName>distance</columnName>
+<tableName>FLG</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="960AD42E-6FD7-1309-49EC-A70C731B8892">
+<columnName>duration</columnName>
+<tableName>FLG</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7D73530D-9681-5496-2C15-55E1A33A9059">
+<columnName>ACNT_id</columnName>
+<tableName>ACNT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1C7034EE-FF4A-DCB3-AEF6-5669F01EA56F">
+<columnName>ACNT_ACNT_id</columnName>
+<tableName>REQ</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="16CD6ACE-B1D7-6074-15C2-EA268D231334">
+<columnName>REQ_id</columnName>
+<tableName>REQ</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8C96E1C2-E89A-E52E-2789-3EDEB662041C">
+<columnName>REQ_id</columnName>
+<tableName>REQ_RES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="91634136-E9E2-82E1-AACC-9BA60420FAD1">
+<columnName>REQ_ACNT_ACNT_id</columnName>
+<tableName>REQ_RES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="611B3918-079F-79A9-B71F-11E0AEEC1AFD">
+<columnName>RES_id</columnName>
+<tableName>RES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3EE254EF-2D8A-3FE4-4D6F-FA46DDE5A47F">
+<columnName>RES_RES_id</columnName>
+<tableName>REQ_RES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E90D4A94-8FBB-E4CA-A5F4-798E1A0572BA">
+<columnName>INV_id</columnName>
+<tableName>INV</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0B8072BB-DBF9-F7D4-A78A-A93B855A8033">
+<columnName>INV_INV_id</columnName>
+<tableName>REQ_RES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="783F4695-0663-486C-6D25-9A5B6C0E757F">
+<columnName>INV_INV_id</columnName>
+<tableName>TRS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B1B2D064-6DEA-6E29-6658-5A0DC1E50595">
+<columnName>RES_RES_id</columnName>
+<tableName>TCT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="838F6683-E454-62F0-D1E0-BF60201A8806">
+<columnName>TRS_id</columnName>
+<tableName>TRS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2B94DEFE-D094-F6CA-57F9-185DDFAF42F0">
+<columnName>TRS_TRS_id</columnName>
+<tableName>TCT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="53700205-65D8-319B-AA2B-028DEEC51B0E">
+<columnName>PSS_id</columnName>
+<tableName>PSS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C9A5D408-90A2-3B00-C3B3-BDB5EC01EC98">
+<columnName>PSS_PSS_id</columnName>
+<tableName>TCT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="99BA136E-C44E-14C7-0184-B74CEE733186">
+<columnName>ACNT_ACNT_id</columnName>
+<tableName>CRC</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EED89496-774F-706F-AB89-1D4B66335374">
+<columnName>SES_id</columnName>
+<tableName>SES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="06ECEF43-7810-0F7B-157B-B5622EB57AD6">
+<columnName>SES_SES_id</columnName>
+<tableName>RES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4E06DFA2-EB80-6D71-D295-03219173CD51">
+<columnName>SES_SES_id</columnName>
+<tableName>INS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="30B8C7FF-6B5A-A000-A1EC-6036A616E723">
+<columnName>ALW_RTE_RTE_id</columnName>
+<tableName>FLG</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A986265F-DA68-732A-C971-507A0C56CEF0">
+<columnName>FLG_route_id</columnName>
+<tableName>INS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8399A286-4E41-69A0-A98A-8A3518317FFE">
+<columnName>WRN_APT_APT_IATA</columnName>
+<tableName>FLG</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5E848575-06FD-3117-2978-DC8B124A6EE4">
+<columnName>FLG_airport_IATA</columnName>
+<tableName>INS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CA3CA576-837E-8132-7543-8B4B789FCB0F">
+<columnName>WRN_ALN_ALN_IATA</columnName>
+<tableName>FLG</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="38764D13-B9E9-C140-8F07-8C059DD0BFC1">
+<columnName>FLG_airline_IATA</columnName>
+<tableName>INS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="802524FF-7087-1A6B-5D50-F373228C2AC1">
+<columnName>RTE_RTE_id</columnName>
+<tableName>ALW</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FA2B511A-CA2B-8ACF-551A-A5008EBC9C5C">
+<columnName>RTE_id</columnName>
+<tableName>RTE</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

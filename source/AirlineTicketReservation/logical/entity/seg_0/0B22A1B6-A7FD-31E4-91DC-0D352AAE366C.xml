@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0B22A1B6-A7FD-31E4-91DC-0D352AAE366C" name="Promo_code">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 14:54:36 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="870E0104-0412-CDF1-3881-18AB1569E8E5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>PRC</preferredAbbreviation>
+<shortName>PRC</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="promo_code_id" id="BAA5E4B1-FAC6-E8BC-EC01-192416A2D2C6">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 14:54:42 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="870E0104-0412-CDF1-3881-18AB1569E8E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PRC_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="allowed_usages" id="B20894F2-CDD6-AF29-77AA-A7D82B0E8CE9">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 16:56:24 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="870E0104-0412-CDF1-3881-18AB1569E8E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="discount_percentage" id="176190DD-2312-C0AE-CC6F-14B53F3031BD">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:36:39 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="870E0104-0412-CDF1-3881-18AB1569E8E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="session_id" id="BC3C7982-9964-BA30-2F27-FDCCF6403132">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:40:21 UTC</createdTime>
+<generatorID>1F01F95E-B22D-35EA-7943-624333FF9AE9</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="870E0104-0412-CDF1-3881-18AB1569E8E5" value="true"/>
+</engineerTo>
+<referedAttribute>A2E675D8-B3DA-1E5A-A505-BDB86D516556</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="active_from" id="84F0ED58-385B-1738-62EA-A68DA32C1AB2">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:54:17 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="870E0104-0412-CDF1-3881-18AB1569E8E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="active_to" id="AF27402A-D771-F124-A554-5A224F422B44">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 21:54:29 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="870E0104-0412-CDF1-3881-18AB1569E8E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="22560173-A2BD-FAE9-BEEB-DC67C6679CF6" name="Promo_code PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 14:58:56 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="870E0104-0412-CDF1-3881-18AB1569E8E5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BAA5E4B1-FAC6-E8BC-EC01-192416A2D2C6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

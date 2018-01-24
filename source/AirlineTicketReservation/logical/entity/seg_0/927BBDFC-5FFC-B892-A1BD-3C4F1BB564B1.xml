@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="927BBDFC-5FFC-B892-A1BD-3C4F1BB564B1" name="Airport">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 14:00:08 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="DCED9A88-5822-0CDC-D178-127517FE178F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>APT</preferredAbbreviation>
+<shortName>APT</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="airport_IATA" id="ADDE911F-E079-CE3B-8667-F7682F0DAD71">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 14:00:22 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="DCED9A88-5822-0CDC-D178-127517FE178F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<preferredAbbreviation>APT_IATA</preferredAbbreviation>
+</Attribute>
+<Attribute name="airport_ICAO" id="8DE92130-6FD4-7CE3-7B07-AD30826E97DB">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:30:33 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="DCED9A88-5822-0CDC-D178-127517FE178F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<preferredAbbreviation>APT_ICAO</preferredAbbreviation>
+</Attribute>
+<Attribute name="location_id" id="360D3D32-A35E-E209-3160-5E0EBCF9BBE8">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:24:04 UTC</createdTime>
+<generatorID>190CB87B-2DD4-9A68-2D29-43231C5075A1</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="DCED9A88-5822-0CDC-D178-127517FE178F" value="true"/>
+</engineerTo>
+<referedAttribute>991CFF16-1F9A-C19A-DD42-5B1EE2596EAF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="website" id="7C6BD289-64FE-1ED0-AEBC-2147559D4617">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:30:41 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="DCED9A88-5822-0CDC-D178-127517FE178F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="13C725D7-8185-012F-5D4B-5BCEC2B65D0B">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:30:44 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="DCED9A88-5822-0CDC-D178-127517FE178F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C3DDEF1C-BA31-1B28-BA15-2D3E5BE50128" name="Airport PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 14:00:28 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DCED9A88-5822-0CDC-D178-127517FE178F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ADDE911F-E079-CE3B-8667-F7682F0DAD71</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

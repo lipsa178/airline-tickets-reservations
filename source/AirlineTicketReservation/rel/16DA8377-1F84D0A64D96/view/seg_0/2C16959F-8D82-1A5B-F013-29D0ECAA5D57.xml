@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="2C16959F-8D82-1A5B-F013-29D0ECAA5D57" name="FLG_INS_ON_APT_VIEW">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-17 19:33:45 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<ordsAlias>view_1</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL>SELECT&lt;br/&gt;    COUNT(*) AS &quot;Ukupan broj letova&quot;&lt;br/&gt;FROM&lt;br/&gt;    flg&lt;br/&gt;    INNER JOIN ins ON flg.alw_rte_rte_id = ins.flg_route_id&lt;br/&gt;                      AND flg.wrn_apt_apt_iata = ins.flg_airport_iata&lt;br/&gt;                      AND flg.wrn_aln_aln_iata = ins.flg_airline_iata&lt;br/&gt;    INNER JOIN alw ON alw.rte_rte_id = flg.alw_rte_rte_id&lt;br/&gt;    INNER JOIN rte ON rte.rte_id = alw.rte_rte_id</userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="&quot;Ukupan broj letova&quot;" id="B349B39E-E996-D6B7-6705-C417E2A26FE7">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-18 19:13:19 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>&quot;Ukupan broj letova&quot;</alias>
+<dataType>UNKNOWN</dataType>
+<expression>count(*)</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C24FB1F7-6273-EF41-67B0-01A09ED9E712">
+<container>true</container>
+<tableName>FLG</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D4385008-A8AF-72B9-D912-DF4B06C571BB">
+<container>true</container>
+<tableName>INS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="086B7C1F-2EB1-FAD6-9E71-6451E0C7166C">
+<container>true</container>
+<tableName>ALW</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DF6F6129-3B59-8B39-E36E-9A4951D53BC6">
+<container>true</container>
+<tableName>RTE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="30B8C7FF-6B5A-A000-A1EC-6036A616E723">
+<columnName>ALW_RTE_RTE_id</columnName>
+<tableName>FLG</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A986265F-DA68-732A-C971-507A0C56CEF0">
+<columnName>FLG_route_id</columnName>
+<tableName>INS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8399A286-4E41-69A0-A98A-8A3518317FFE">
+<columnName>WRN_APT_APT_IATA</columnName>
+<tableName>FLG</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5E848575-06FD-3117-2978-DC8B124A6EE4">
+<columnName>FLG_airport_IATA</columnName>
+<tableName>INS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CA3CA576-837E-8132-7543-8B4B789FCB0F">
+<columnName>WRN_ALN_ALN_IATA</columnName>
+<tableName>FLG</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="38764D13-B9E9-C140-8F07-8C059DD0BFC1">
+<columnName>FLG_airline_IATA</columnName>
+<tableName>INS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="802524FF-7087-1A6B-5D50-F373228C2AC1">
+<columnName>RTE_RTE_id</columnName>
+<tableName>ALW</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FA2B511A-CA2B-8ACF-551A-A5008EBC9C5C">
+<columnName>RTE_id</columnName>
+<tableName>RTE</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

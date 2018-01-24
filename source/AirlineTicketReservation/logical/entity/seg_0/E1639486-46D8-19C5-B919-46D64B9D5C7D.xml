@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E1639486-46D8-19C5-B919-46D64B9D5C7D" name="Pass">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:00:52 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="7D993D5A-C8DB-7EAD-3F50-10B00E19F096" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>PSS</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pass_id" id="D75C39F1-9413-517C-CDA9-5C184B5EB207">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:01:00 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="7D993D5A-C8DB-7EAD-3F50-10B00E19F096" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>PSS_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="validity" id="BD8E590D-1599-DF80-EC14-33ABC98ED8DB">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:01:12 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="7D993D5A-C8DB-7EAD-3F50-10B00E19F096" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<preferredAbbreviation>VAL</preferredAbbreviation>
+</Attribute>
+<Attribute name="terminal_id" id="311A07B5-6141-3330-AF7A-5B8542743740">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:01:45 UTC</createdTime>
+<generatorID>3F68EFFB-8102-A5CC-BB47-6698F7E6C91C</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="7D993D5A-C8DB-7EAD-3F50-10B00E19F096" value="true"/>
+</engineerTo>
+<referedAttribute>7AED7257-CD90-6D1B-423A-67FCDFE7F8F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>TMN_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="airport_IATA" id="7ECB0CAC-0AD0-B89B-4137-C2E844F1F246">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:01:45 UTC</createdTime>
+<generatorID>3F68EFFB-8102-A5CC-BB47-6698F7E6C91C</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="7D993D5A-C8DB-7EAD-3F50-10B00E19F096" value="true"/>
+</engineerTo>
+<referedAttribute>5BE54A67-295E-5CD7-E621-836EED8EF062</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<preferredAbbreviation>APT_IATA</preferredAbbreviation>
+</Attribute>
+<Attribute name="gate_id" id="3D187CD6-D66A-9336-039A-69636CB868BF">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:01:45 UTC</createdTime>
+<generatorID>3F68EFFB-8102-A5CC-BB47-6698F7E6C91C</generatorID>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="7D993D5A-C8DB-7EAD-3F50-10B00E19F096" value="true"/>
+</engineerTo>
+<referedAttribute>F6BF8A95-02C0-CA7A-51B3-479F28202E1F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>GATE_id</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="469A6115-C1AC-9723-CD57-1709163FFCDC" name="Pass PK">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 22:01:21 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="7D993D5A-C8DB-7EAD-3F50-10B00E19F096" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D75C39F1-9413-517C-CDA9-5C184B5EB207</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

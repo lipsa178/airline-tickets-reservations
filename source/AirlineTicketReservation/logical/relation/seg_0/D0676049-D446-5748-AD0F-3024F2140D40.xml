@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_41" directorySegmentName="seg_0" id="D0676049-D446-5748-AD0F-3024F2140D40">
+<createdBy>ljmocic</createdBy>
+<createdTime>2018-01-16 17:06:04 UTC</createdTime>
+<ownerDesignName>AirlineTicketReservation</ownerDesignName>
+<engineerTo>
+<item key="C70FA075-BEFB-D968-4A38-EA300683B7C0" value="true"/>
+</engineerTo>
+<sourcePk>5B700CB1-47A6-64D0-C264-85CB1134C623</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5501CB53-FF17-A207-7E6F-8415C66AAAA0</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>CFE16EEA-E77A-4557-CF7B-63C704A2862C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
